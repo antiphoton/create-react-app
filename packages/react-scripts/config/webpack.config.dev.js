@@ -32,6 +32,8 @@ const publicUrl = '';
 // Get environment variables to inject into our app.
 const env = getClientEnvironment(publicUrl);
 
+const eslintConfig = require(`${paths.appPath}/config/eslint`);
+
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
 // The production configuration is different and lives in a separate file.
@@ -129,6 +131,7 @@ module.exports = {
       // It's important to do this before Babel processes the JS.
       {
         test: /\.(js|jsx)$/,
+        exclude: eslintConfig.excludePath || [],
         enforce: 'pre',
         use: [
           {

@@ -1,3 +1,10 @@
+# Features by antiphoton
+
+## Custom eslint rule
+
+The file `${APP_PATH}/config/eslint.js` may export following fields
+1. `exludePath`
+
 # Create React App [![Build Status](https://travis-ci.org/facebookincubator/create-react-app.svg?branch=master)](https://travis-ci.org/facebookincubator/create-react-app)
 
 Create React apps with no build configuration.
