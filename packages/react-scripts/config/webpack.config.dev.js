@@ -163,7 +163,7 @@ module.exports = {
         exclude: [
           /\.html$/,
           /\.(js|jsx)$/,
-          /\.(css)$/,
+          /\.(css|less)$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
@@ -208,7 +208,7 @@ module.exports = {
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
-        test: /\.(css)$/,
+        test: /\.(css|less)$/,
         use: [
           require.resolve('style-loader'),
           {
@@ -219,21 +219,9 @@ module.exports = {
             },
           },
           {
-            loader: require.resolve('postcss-loader'),
+            loader: require.resolve('less-loader'),
             options: {
-              ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
-              plugins: () => [
-                require('postcss-flexbugs-fixes'),
-                autoprefixer({
-                  browsers: [
-                    '>1%',
-                    'last 4 versions',
-                    'Firefox ESR',
-                    'not ie < 9', // React doesn't support IE8 anyway
-                  ],
-                  flexbox: 'no-2009',
-                }),
-              ],
+              strictMath: true,
             },
           },
         ],
