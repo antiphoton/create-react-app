@@ -1,7 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 appName=$1
-cd /home/node/
-sh /home/node/tasks/cra.sh $appName
-cd /home/node/$appName
-node /home/node/packages/react-scripts/scripts/eject.js
+bash /home/node/tasks/cra.sh $appName
+cd /home/node/myReactProjects/$appName
+#node /home/node/packages/react-scripts/scripts/eject.js
 

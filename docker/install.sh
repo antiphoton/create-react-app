@@ -1,3 +1,5 @@
 #!/bin/sh
+IMAGE_NAME=cka-ap-77de7db
 rootDir="$( cd "$( dirname "$0" )" && cd .. && pwd )"
-docker run -v $rootDir:/home/node/ node:8.1.3-alpine sh /home/node/docker/scripts/install.sh
+docker build -t ${IMAGE_NAME} ${rootDir}/docker
+docker run -v $rootDir:/home/node/ ${IMAGE_NAME} bash /home/node/docker/scripts/install.sh

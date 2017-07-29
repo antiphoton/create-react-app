@@ -1,5 +1,10 @@
 # Features by antiphoton
 
+## TODO
+
+1. `$ sh docker/install.sh`
+1. `$ sh docker/create.sh MY_APP_NAME`
+
 ## Custom eslint rule
 
 The file `${APP_PATH}/config/eslint.js` may export following fields

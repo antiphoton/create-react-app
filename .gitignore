@@ -13,6 +13,7 @@ yarn-error.log*
 /.changelog
 
 package-lock.json
-/.npm
+.npm
+.bash_history
 .*.swo
 .*.swp
