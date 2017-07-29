@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/node
+cd /root
 npm install
 npm build
 

@@ -3,12 +3,7 @@
 ## TODO
 
 1. `$ sh docker/install.sh`
-1. `$ sh docker/create.sh MY_APP_NAME`
-
-## Custom eslint rule
-
-The file `${APP_PATH}/config/eslint.js` may export following fields
-1. `exludePath`
+1. `$ sh docker/create.sh my-app-name`
 
 # Create React App [![Build Status](https://travis-ci.org/facebookincubator/create-react-app.svg?branch=master)](https://travis-ci.org/facebookincubator/create-react-app)
 

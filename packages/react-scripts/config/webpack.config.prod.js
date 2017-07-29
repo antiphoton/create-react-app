@@ -36,8 +36,6 @@ const publicUrl = publicPath.slice(0, -1);
 // Get environment variables to inject into our app.
 const env = getClientEnvironment(publicUrl);
 
-const eslintConfig = require(`${paths.appPath}/config/eslint`);
-
 // Assert this just to be safe.
 // Development builds of React are slow and not intended for production.
 if (env.stringified['process.env'].NODE_ENV !== '"production"') {
@@ -133,7 +131,6 @@ module.exports = {
       // It's important to do this before Babel processes the JS.
       {
         test: /\.(js|jsx)$/,
-        exclude: eslintConfig.excludePath || [],
         enforce: 'pre',
         use: [
           {

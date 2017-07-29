@@ -1,6 +1,6 @@
 #!/bin/bash
-appName=$1
-bash /home/node/tasks/cra.sh $appName
-cd /home/node/myReactProjects/$appName
-#node /home/node/packages/react-scripts/scripts/eject.js
+appPath=$1
+bash /root/tasks/cra.sh $appPath
+cd $appPath
+node /root/packages/react-scripts/bin/react-scripts.js eject
 
